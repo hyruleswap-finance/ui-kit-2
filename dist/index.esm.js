@@ -136,6 +136,9 @@ var variants$1 = {
     DANGER: "danger",
     SUBTLE: "subtle",
     SUCCESS: "success",
+    GAMBLE_RED: "gamble_red",
+    GAMBLE_BLACK: "gamble_black",
+    GAMBLE_GREEN: "gamble_green",
 };
 
 var getDisabledStyles = function (_a) {
@@ -2752,6 +2755,9 @@ var baseColors = {
     secondary: "#13261d",
     success: "#31D0AA",
     warning: "#FFB237",
+    gamble_green: "#69b380",
+    gamble_black: "#171726",
+    gamble_red: "#ed405d",
 };
 var brandColors = {
     binance: "#F0B90B",
@@ -2771,7 +2777,7 @@ var dark$7 = {
 };
 
 var _a, _b;
-var PRIMARY = variants$1.PRIMARY, SECONDARY = variants$1.SECONDARY, TERTIARY = variants$1.TERTIARY, TEXT = variants$1.TEXT, DANGER = variants$1.DANGER, SUBTLE = variants$1.SUBTLE, SUCCESS = variants$1.SUCCESS;
+var PRIMARY = variants$1.PRIMARY, SECONDARY = variants$1.SECONDARY, TERTIARY = variants$1.TERTIARY, TEXT = variants$1.TEXT, DANGER = variants$1.DANGER, SUBTLE = variants$1.SUBTLE, SUCCESS = variants$1.SUCCESS, GAMBLE_RED = variants$1.GAMBLE_RED, GAMBLE_BLACK = variants$1.GAMBLE_BLACK, GAMBLE_GREEN = variants$1.GAMBLE_GREEN;
 var light$6 = (_a = {},
     _a[PRIMARY] = {
         background: lightColors.primary,
@@ -2843,6 +2849,36 @@ var light$6 = (_a = {},
         boxShadowActive: "none",
         color: "#13261d",
     },
+    _a[GAMBLE_RED] = {
+        background: lightColors.gamble_red,
+        backgroundActive: lightColors.primaryDark,
+        backgroundHover: "#75202e",
+        border: 0,
+        borderColorHover: "currentColor",
+        boxShadow: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+        boxShadowActive: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+        color: "#13261d",
+    },
+    _a[GAMBLE_BLACK] = {
+        background: lightColors.gamble_black,
+        backgroundActive: lightColors.primaryDark,
+        backgroundHover: "#0b0b12",
+        border: 0,
+        borderColorHover: "currentColor",
+        boxShadow: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+        boxShadowActive: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+        color: "#13261d",
+    },
+    _a[GAMBLE_GREEN] = {
+        background: lightColors.gamble_green,
+        backgroundActive: lightColors.primaryDark,
+        backgroundHover: "#355940",
+        border: 0,
+        borderColorHover: "currentColor",
+        boxShadow: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+        boxShadowActive: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+        color: "#13261d",
+    },
     _a);
 var dark$6 = (_b = {},
     _b[PRIMARY] = __assign({}, light$6.primary),
@@ -2852,6 +2888,9 @@ var dark$6 = (_b = {},
     _b[DANGER] = __assign({}, light$6.danger),
     _b[SUBTLE] = __assign({}, light$6.subtle),
     _b[SUCCESS] = __assign({}, light$6.success),
+    _b[GAMBLE_RED] = __assign({}, light$6.gamble_red),
+    _b[GAMBLE_BLACK] = __assign({}, light$6.gamble_black),
+    _b[GAMBLE_GREEN] = __assign({}, light$6.gamble_green),
     _b);
 
 var light$5 = {

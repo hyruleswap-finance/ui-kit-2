@@ -13,6 +13,9 @@ export declare const variants: {
     readonly DANGER: "danger";
     readonly SUBTLE: "subtle";
     readonly SUCCESS: "success";
+    readonly GAMBLE_RED: "gamble_red";
+    readonly GAMBLE_BLACK: "gamble_black";
+    readonly GAMBLE_GREEN: "gamble_green";
 };
 export declare type Sizes = typeof sizes[keyof typeof sizes];
 export declare type Variants = typeof variants[keyof typeof variants];

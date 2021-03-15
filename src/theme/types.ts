@@ -40,6 +40,9 @@ export type Colors = {
   success: string;
   failure: string;
   warning: string;
+  gamble_green: string;
+  gamble_black: string;
+  gamble_red: string;
   contrast: string;
   invertedContrast: string;
   inputSecondary: string,

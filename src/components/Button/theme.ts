@@ -1,7 +1,7 @@
 import { ButtonTheme, variants } from "./types";
 import { lightColors, darkColors } from "../../theme/colors";
 
-const { PRIMARY, SECONDARY, TERTIARY, TEXT, DANGER, SUBTLE, SUCCESS } = variants;
+const { PRIMARY, SECONDARY, TERTIARY, TEXT, DANGER, SUBTLE, SUCCESS, GAMBLE_RED, GAMBLE_BLACK, GAMBLE_GREEN } = variants;
 
 export const light: ButtonTheme = {
   [PRIMARY]: {
@@ -74,6 +74,36 @@ export const light: ButtonTheme = {
     boxShadowActive: "none",
     color: "#13261d",
   },
+  [GAMBLE_RED]: {
+    background: lightColors.gamble_red,
+    backgroundActive: lightColors.primaryDark,
+    backgroundHover: "#75202e",
+    border: 0,
+    borderColorHover: "currentColor",
+    boxShadow: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+    boxShadowActive: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+    color: "#13261d",
+  },
+  [GAMBLE_BLACK]: {
+    background: lightColors.gamble_black,
+    backgroundActive: lightColors.primaryDark,
+    backgroundHover: "#0b0b12",
+    border: 0,
+    borderColorHover: "currentColor",
+    boxShadow: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+    boxShadowActive: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+    color: "#13261d",
+  },
+  [GAMBLE_GREEN]: {
+    background: lightColors.gamble_green,
+    backgroundActive: lightColors.primaryDark,
+    backgroundHover: "#355940",
+    border: 0,
+    borderColorHover: "currentColor",
+    boxShadow: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+    boxShadowActive: "inset 0px -1px 0px rgba(14, 14, 44, 0.4)",
+    color: "#13261d",
+  },
 };
 
 export const dark: ButtonTheme = {
@@ -102,5 +132,14 @@ export const dark: ButtonTheme = {
   },
   [SUCCESS]: {
     ...light.success,
+  },
+  [GAMBLE_RED]: {
+    ...light.gamble_red,
+  },
+  [GAMBLE_BLACK]: {
+    ...light.gamble_black,
+  },
+  [GAMBLE_GREEN]: {
+    ...light.gamble_green,
   },
 };

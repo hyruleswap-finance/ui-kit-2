@@ -9,6 +9,9 @@ export const baseColors = {
   secondary: "#13261d",
   success: "#31D0AA",
   warning: "#FFB237",
+  gamble_green: "#69b380",
+  gamble_black: "#171726",
+  gamble_red: "#ed405d",
 };
 
 export const brandColors = {
