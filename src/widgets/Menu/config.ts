@@ -72,7 +72,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/joinchat/JVMksCDh2ko0NTg0",
+        href: "https://t.me/hyruleswap",
       },
     ],
   },
