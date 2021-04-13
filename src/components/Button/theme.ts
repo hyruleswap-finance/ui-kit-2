@@ -1,7 +1,18 @@
 import { ButtonTheme, variants } from "./types";
 import { lightColors, darkColors } from "../../theme/colors";
 
-const { PRIMARY, SECONDARY, TERTIARY, TEXT, DANGER, SUBTLE, SUCCESS, GAMBLE_RED, GAMBLE_BLACK, GAMBLE_GREEN } = variants;
+const {
+  PRIMARY,
+  SECONDARY,
+  TERTIARY,
+  TEXT,
+  DANGER,
+  SUBTLE,
+  SUCCESS,
+  GAMBLE_RED,
+  GAMBLE_BLACK,
+  GAMBLE_GREEN,
+} = variants;
 
 export const light: ButtonTheme = {
   [PRIMARY]: {

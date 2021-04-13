@@ -45,7 +45,7 @@ export type Colors = {
   gamble_red: string;
   contrast: string;
   invertedContrast: string;
-  inputSecondary: string,
+  inputSecondary: string;
   input: string;
   background: string;
   backgroundDisabled: string;

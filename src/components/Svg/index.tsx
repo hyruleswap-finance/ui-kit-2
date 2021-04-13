@@ -22,6 +22,7 @@ export { default as CommunityIcon } from "./Icons/Community";
 export { default as CopyIcon } from "./Icons/Copy";
 export { default as ErrorIcon } from "./Icons/Error";
 export { default as GamblingToken } from "./Icons/GamblingToken";
+export { default as GoldenRupee } from "./Icons/GoldenRupee";
 export { default as HelpIcon } from "./Icons/Help";
 export { default as InfoIcon } from "./Icons/Info";
 export { default as ListViewIcon } from "./Icons/ListView";

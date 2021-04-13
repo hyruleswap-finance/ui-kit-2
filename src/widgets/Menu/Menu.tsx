@@ -72,6 +72,8 @@ const Menu: React.FC<NavProps> = ({
   priceLink,
   profile,
   children,
+  gRupeePriceUsd,
+  gRupeePriceLink,
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -139,6 +141,8 @@ const Menu: React.FC<NavProps> = ({
           pushNav={setIsPushed}
           links={links}
           priceLink={priceLink}
+          gRupeePriceUsd={gRupeePriceUsd}
+          gRupeePriceLink={gRupeePriceLink}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}

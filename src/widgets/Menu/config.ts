@@ -10,7 +10,8 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.pancakeswap.finance/#/swap?inputCurrency=BNB&outputCurrency=0x7b0409a3a3f79baa284035d48e1dfd581d7d7654",
+        href:
+          "https://exchange.pancakeswap.finance/#/swap?inputCurrency=BNB&outputCurrency=0x7b0409a3a3f79baa284035d48e1dfd581d7d7654",
       },
       {
         label: "Liquidity",
@@ -66,6 +67,11 @@ export const links = [
 ];
 
 export const socials = [
+  {
+    label: "Reddit",
+    icon: "RedditIcon",
+    href: "https://www.reddit.com/r/HyruleSwap/",
+  },
   {
     label: "Telegram",
     icon: "TelegramIcon",

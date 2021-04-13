@@ -40,7 +40,7 @@ const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
         ></path>
       </g>
     </Svg>
-  )
+  );
 };
 
 export default Logo;
