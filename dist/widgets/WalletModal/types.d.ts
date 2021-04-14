@@ -7,3 +7,14 @@ export interface Config {
     icon: FC<SvgProps>;
     connectorId: ConnectorId;
 }
+export declare enum ConnectorNames {
+    Injected = "injected",
+    WalletConnect = "walletconnect",
+    BSC = "bsc"
+}
+export declare type LoginExchange = (connectorId: ConnectorNames) => void;
+export interface ConfigExchange {
+    title: string;
+    icon: FC<SvgProps>;
+    connectorId: ConnectorNames;
+}

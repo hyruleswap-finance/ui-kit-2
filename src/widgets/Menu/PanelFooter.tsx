@@ -121,14 +121,14 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
-        {/* {gRupeePriceUsd ? (
+        {gRupeePriceUsd ? (
           <PriceLink href={gRupeePriceLink} target="_blank">
             <GoldenRupee width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${gRupeePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />
-        )} */}
+        )}
       </PriceEntry>
       <SettingsEntry>
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>

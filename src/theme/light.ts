@@ -2,6 +2,7 @@ import { DefaultTheme } from "styled-components";
 import { light as lightAlert } from "../components/Alert/theme";
 import { light as lightButton } from "../components/Button/theme";
 import { light as lightCard } from "../components/Card/theme";
+import { light as lightPancakeToggle } from "../components/PancakeToggle/theme";
 import { light as lightRadio } from "../components/Radio/theme";
 import { light as lightToggle } from "../components/Toggle/theme";
 import { light as lightTooltip } from "../components/Tooltip/theme";
@@ -20,6 +21,7 @@ const lightTheme: DefaultTheme = {
   toggle: lightToggle,
   nav: lightNav,
   modal: lightModal,
+  pancakeToggle: lightPancakeToggle,
   radio: lightRadio,
   tooltip: lightTooltip,
 };
