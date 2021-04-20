@@ -66,6 +66,11 @@ export const links = [
   },
 ];
 
+export const metamask = {
+  label: "Add to Metamask",
+    icon: "MetaMask",
+}
+
 export const socials = [
   {
     label: "Reddit",
