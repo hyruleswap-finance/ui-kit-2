@@ -22,4 +22,3 @@ export { default as TradeIcon } from "./Trade";
 export { default as TwitterIcon } from "./Twitter";
 export { default as VaultsIcon } from "./Vaults";
 export { default as HelmetIcon } from "./Helmet";
-export { default as MetaMask } from "../../../components/Svg/Icons/MetaMask"

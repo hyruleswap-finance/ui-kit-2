@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps, GoldenRupee, MetaMask } from "../../components/Svg";
+import { PancakeRoundIcon, CogIcon, SvgProps, GoldenRupee } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -10,9 +10,8 @@ import Button from "../../components/Button/Button";
 import IconButton from "../../components/Button/IconButton";
 import MenuButton from "./MenuButton";
 import * as IconModule from "./icons";
-import { socials, MENU_ENTRY_HEIGHT, metamask } from "./config";
+import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
-import { addRupee } from "./web3Utils"
 
 interface Props extends PanelProps, PushedProps {}
 
@@ -113,16 +112,6 @@ const PanelFooter: React.FC<Props> = ({
             );
           })}
       </SocialEntry>
-      {metamask ? (
-           <Button variant="text" fullWidth onClick={() => addRupee() }>
-             <MetaMask></MetaMask>
-            <Text color="textSubtle" bold marginleft>{`${metamask.label}`}</Text>
-           </Button>
-
-        ) : (
-          <Skeleton width={80} height={24} />
-        )}
-
       <PriceEntry>
         {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
