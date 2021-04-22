@@ -49,6 +49,7 @@ export interface PanelProps {
   priceLink: string;
   gRupeePriceUsd?: number,
   gRupeePriceLink?: string;
+  addMetaMask: () => void;
 }
 
 export interface NavProps extends PanelProps {

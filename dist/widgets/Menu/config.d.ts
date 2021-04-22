@@ -12,6 +12,10 @@ export declare const links: ({
     }[];
     href?: undefined;
 })[];
+export declare const metamask: {
+    label: string;
+    icon: string;
+};
 export declare const socials: ({
     label: string;
     icon: string;

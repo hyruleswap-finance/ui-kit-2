@@ -74,6 +74,7 @@ const MenuExchange: React.FC<NavPropsExchange> = ({
   children,
   gRupeePriceUsd,
   gRupeePriceLink,
+  addMetaMask,
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -143,6 +144,7 @@ const MenuExchange: React.FC<NavPropsExchange> = ({
           priceLink={priceLink}
           gRupeePriceUsd={gRupeePriceUsd}
           gRupeePriceLink={gRupeePriceLink}
+          addMetaMask={addMetaMask}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}
