@@ -22,6 +22,7 @@ const Text = styled.div<TextProps>`
   font-weight: ${({ bold }) => (bold ? 600 : 400)};
   line-height: 1.5;
   margin-left: ${({ marginleft }) => (marginleft ? "5px" : "0px")};
+  margin-top:  ${({ margintop }) => (margintop ? "1em" : "0px")};
   ${({ textTransform }) => textTransform && `text-transform: ${textTransform};`}
   ${space}
   ${typography}

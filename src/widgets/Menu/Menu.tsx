@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import throttle from "lodash/throttle";
+import Text from "../../components/Text/Text";
+import { SvgProps } from "../../components/Svg";
 import Overlay from "../../components/Overlay/Overlay";
 import { Flex } from "../../components/Flex";
 import { useMatchBreakpoints } from "../../hooks";
@@ -10,6 +12,10 @@ import UserBlock from "./UserBlock";
 import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 import Avatar from "./Avatar";
+import * as IconModule from "./icons";
+const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
+const { CertikIcon } = Icons;
+
 
 const Wrapper = styled.div`
   position: relative;
@@ -48,6 +54,53 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 `;
+
+
+const CertikButton = styled.a`
+  position: fixed;
+  opacity: 0.9;
+  bottom: 0.5vh;
+  right: 1vh;
+  min-width: 2em;
+  max-width: 15em;
+  height: 6vh;
+  border-radius: .5rem;
+  outline: none;
+  background-color: #37423c;
+  border-style: hidden;
+  display: flex;
+  justify-content: space-around;
+
+
+  &:active { border-style: hidden;}
+
+`;
+
+const CertikLabel = styled.div`
+  position: relative;
+  top: 0px;
+  left: 0px;
+  min-width: 50%;
+  max-width: 100%;
+  height: 2vh;
+  border-radius: .5rem;
+  outline: none;
+  background-color: white;
+  border-style: hidden;
+  display: flex;
+  align-items: center;
+`;
+
+const CertikText = styled.p`
+min-width: 2%;
+max-width: 100%;
+position: fixed;
+color: green;
+
+
+`;
+
+
 
 const MobileOnlyOverlay = styled(Overlay)`
   position: fixed;
@@ -113,7 +166,7 @@ const Menu: React.FC<NavProps> = ({
 
   // Find the home link if provided
   const homeLink = links.find((link) => link.label === "Home");
-
+  
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
@@ -147,8 +200,13 @@ const Menu: React.FC<NavProps> = ({
           addMetaMask={addMetaMask}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
-          {children}
+          {children}    
         </Inner>
+
+        <CertikButton href="https://www.certik.org/projects/hyruleswap">
+        <Text marginleft margintop color="#8cd4b0" fontSize="0.95em">In Progress</Text> 
+        <CertikIcon width="60%"/>
+        </CertikButton> 
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>
     </Wrapper>
