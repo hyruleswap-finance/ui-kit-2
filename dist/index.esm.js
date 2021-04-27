@@ -2867,7 +2867,10 @@ var Inner$1 = styled.div(templateObject_4$1 || (templateObject_4$1 = __makeTempl
     var isPushed = _a.isPushed;
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
 });
-var CertikButton = styled.a(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: fixed;\n  opacity: 0.9;\n  bottom: 0.5vh;\n  right: 1vh;\n  min-width: 2em;\n  max-width: 15em;\n  height: 6vh;\n  border-radius: .5rem;\n  outline: none;\n  background-color: #37423c;\n  border-style: hidden;\n  display: flex;\n  justify-content: space-around;\n\n\n  &:active { border-style: hidden;}\n\n"], ["\n  position: fixed;\n  opacity: 0.9;\n  bottom: 0.5vh;\n  right: 1vh;\n  min-width: 2em;\n  max-width: 15em;\n  height: 6vh;\n  border-radius: .5rem;\n  outline: none;\n  background-color: #37423c;\n  border-style: hidden;\n  display: flex;\n  justify-content: space-around;\n\n\n  &:active { border-style: hidden;}\n\n"])));
+var CertikButton = styled.a(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: fixed;\n  opacity: 0.9;\n  bottom: 1vh;\n  right: 1vh;\n  min-width: 1.5em;\n  max-width: 12em;\n  height: 4vh;\n  border-radius: .5rem;\n  outline: none;\n  background-color: ", ";\n  border-style: hidden;\n  display: flex;\n  justify-content: space-around;\n\n\n  &:active { border-style: hidden;}\n\n"], ["\n  position: fixed;\n  opacity: 0.9;\n  bottom: 1vh;\n  right: 1vh;\n  min-width: 1.5em;\n  max-width: 12em;\n  height: 4vh;\n  border-radius: .5rem;\n  outline: none;\n  background-color: ", ";\n  border-style: hidden;\n  display: flex;\n  justify-content: space-around;\n\n\n  &:active { border-style: hidden;}\n\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.nav.background;
+});
 styled.div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  position: relative;\n  top: 0px;\n  left: 0px;\n  min-width: 50%;\n  max-width: 100%;\n  height: 2vh;\n  border-radius: .5rem;\n  outline: none;\n  background-color: white;\n  border-style: hidden;\n  display: flex;\n  align-items: center;\n"], ["\n  position: relative;\n  top: 0px;\n  left: 0px;\n  min-width: 50%;\n  max-width: 100%;\n  height: 2vh;\n  border-radius: .5rem;\n  outline: none;\n  background-color: white;\n  border-style: hidden;\n  display: flex;\n  align-items: center;\n"])));
 styled.p(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\nmin-width: 2%;\nmax-width: 100%;\nposition: fixed;\ncolor: green;\n\n\n"], ["\nmin-width: 2%;\nmax-width: 100%;\nposition: fixed;\ncolor: green;\n\n\n"])));
 var MobileOnlyOverlay$1 = styled(Overlay)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
@@ -2922,8 +2925,7 @@ var Menu = function (_a) {
             React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink, gRupeePriceUsd: gRupeePriceUsd, gRupeePriceLink: gRupeePriceLink, addMetaMask: addMetaMask }),
             React.createElement(Inner$1, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(CertikButton, { href: "https://www.certik.org/projects/hyruleswap" },
-                React.createElement(Text, { marginleft: true, margintop: true, color: "#8cd4b0", fontSize: "0.95em" }, "In Progress"),
-                React.createElement(CertikIcon, { width: "60%" })),
+                React.createElement(CertikIcon, { width: "95%" })),
             React.createElement(MobileOnlyOverlay$1, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
 var templateObject_1$4, templateObject_2$1, templateObject_3$1, templateObject_4$1, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8;

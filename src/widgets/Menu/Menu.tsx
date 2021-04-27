@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import throttle from "lodash/throttle";
 import Text from "../../components/Text/Text";
 import { SvgProps } from "../../components/Svg";
@@ -59,14 +59,14 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 const CertikButton = styled.a`
   position: fixed;
   opacity: 0.9;
-  bottom: 0.5vh;
+  bottom: 1vh;
   right: 1vh;
-  min-width: 2em;
-  max-width: 15em;
-  height: 6vh;
+  min-width: 1.5em;
+  max-width: 12em;
+  height: 4vh;
   border-radius: .5rem;
   outline: none;
-  background-color: #37423c;
+  background-color: ${({ theme }) => theme.nav.background};
   border-style: hidden;
   display: flex;
   justify-content: space-around;
@@ -166,7 +166,7 @@ const Menu: React.FC<NavProps> = ({
 
   // Find the home link if provided
   const homeLink = links.find((link) => link.label === "Home");
-  
+
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
@@ -200,13 +200,12 @@ const Menu: React.FC<NavProps> = ({
           addMetaMask={addMetaMask}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
-          {children}    
+          {children}
         </Inner>
 
         <CertikButton href="https://www.certik.org/projects/hyruleswap">
-        <Text marginleft margintop color="#8cd4b0" fontSize="0.95em">In Progress</Text> 
-        <CertikIcon width="60%"/>
-        </CertikButton> 
+          <CertikIcon width="95%" />
+        </CertikButton>
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>
     </Wrapper>
