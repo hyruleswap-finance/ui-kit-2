@@ -2343,8 +2343,48 @@ var socials = [
         icon: "TelegramIcon",
         items: [
             {
-                label: "English",
+                label: "Annoucements Channel",
+                href: "https://t.me/HyruleSwapAnnouncements",
+            },
+            {
+                label: "Official (English)",
                 href: "https://t.me/hyruleswap",
+            },
+            {
+                label: "Francais",
+                href: "https://t.me/hyruleswapfr",
+            },
+            {
+                label: "Español",
+                href: "https://t.me/HyruleSwapSP",
+            },
+            {
+                label: "Pусский",
+                href: "https://t.me/hyruleswapru",
+            },
+            {
+                label: "Deutsche",
+                href: "https://t.me/HyruleSwapGermany",
+            },
+            {
+                label: "Türk",
+                href: "https://t.me/hyruleswaptr",
+            },
+            {
+                label: "日本語",
+                href: "https://t.me/HyruleSwapJP",
+            },
+            {
+                label: "فارسی",
+                href: "https://t.me/HyruleSwapPes",
+            },
+            {
+                label: "Português / Brazilian",
+                href: "https://t.me/HyruleSwapPTBR",
+            },
+            {
+                label: "Indonesian",
+                href: "https://t.me/HyruleSwapID",
             },
         ],
     },
