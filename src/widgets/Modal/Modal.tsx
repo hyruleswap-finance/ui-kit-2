@@ -11,16 +11,17 @@ interface Props extends InjectedProps {
   hideCloseButton?: boolean;
   onBack?: () => void;
   bodyPadding?: string;
+  overflow?: boolean;
 }
 
-const StyledModal = styled.div`
+const StyledModal = styled.div<{ overflow: boolean }>`
   background: ${({ theme }) => theme.modal.background};
   box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid ${({ theme }) => theme.colors.borderColor};
   border-radius: 32px;
   width: 100%;
   z-index: ${({ theme }) => theme.zIndices.modal};
-  overflow-y: auto;
+  overflow-y: ${({ overflow })=> (!overflow ? "hidden" : "auto" )};
   ${({ theme }) => theme.mediaQueries.xs} {
     width: auto;
     min-width: 360px;
@@ -47,9 +48,10 @@ const Modal: React.FC<Props> = ({
   onBack,
   children,
   hideCloseButton = false,
+  overflow=true,
   bodyPadding = "24px",
 }) => (
-  <StyledModal>
+  <StyledModal overflow={overflow}>
     <ModalHeader>
       <ModalTitle>
         {onBack && (
